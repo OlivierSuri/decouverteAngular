@@ -1,0 +1,59 @@
+/* Hero Section */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;  /* L'image prend toute la hauteur de l'écran */
+    background-image: url('https://cdn.paris.fr/paris/2019/07/24/huge-41b950ab4de6f1fa5310b2e4ea4a47f2.jpeg');  /* Remplacer par ton image */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;  /* Le texte en blanc pour contraster avec l'image */
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Contenu dans le Hero */
+  .hero-content {
+    z-index: 1;  /* Pour que le texte soit devant l'image */
+  }
+  
+  .hero h1 {
+    font-size: 4rem;
+    font-family: 'Electro', sans-serif;  /* Change ici par une police de style électro si tu en as une */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);  /* Ombre sur le texte */
+  }
+  
+  /* Le bouton */
+  .show-text-btn {
+    background-color: rgba(255, 69, 0, 0.7);  /* Un orange semi-transparent */
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .show-text-btn:hover {
+    background-color: rgba(255, 69, 0, 1);  /* Quand tu survoles le bouton */
+  }
+  
+  .extra-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);  /* Un fond semi-transparent sous le texte */
+    padding: 30px;
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  

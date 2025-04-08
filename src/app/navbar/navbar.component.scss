@@ -1,0 +1,47 @@
+/* Style de la navbar */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.7);  /* Couleur de fond de la navbar, tu peux changer selon tes goûts */
+    padding: 20px 40px;  /* Espace autour du contenu de la navbar (haut et bas + gauche et droite) */
+    display: flex;
+    justify-content: center;
+    align-items: center;  /* Centrer les éléments verticalement */
+    position: fixed;  /* Pour que la navbar reste en haut même quand on scrolle */
+    top: 0;
+    left: 0;
+    width: 100%;  /* La navbar prend toute la largeur de l'écran */
+    z-index: 1000;  /* S'assurer que la navbar est toujours devant les autres éléments */
+  }
+  
+  /* Style des liens de la navbar */
+  .nav-links {
+    display: flex;
+    list-style: none;
+    gap: 50px;  /* Espacement entre les éléments de la navbar */
+  }
+  
+  .nav-links li {
+    padding: 10px 0;  /* Un peu de padding autour de chaque lien */
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: white;  /* Couleur du texte des liens */
+    font-family: 'Electro', sans-serif;
+    font-weight: bold;
+    font-size: 1.3rem;  /* Taille des caractères dans la navbar */
+    text-transform: uppercase;  /* Mettre les liens en majuscules */
+    transition: color 0.3s ease;  /* Transition sur la couleur */
+  }
+  
+  /* Change la couleur au survol */
+  .nav-links a:hover {
+    color: #ff4500;  /* Une couleur orangée pour le survol */
+  }
+  
+  /* Ajoute un effet à la navbar lorsque la page est en scroll */
+  .navbar.fixed {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);  /* Ombre sous la navbar */
+  }
+  
+
+  
