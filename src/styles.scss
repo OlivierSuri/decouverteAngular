@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+
+// Déclaration de variable
+
+$font-family-electro: 'Electro', sans-serif;
+
+
+//Application de style globale
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: $font-family-electro;
+}

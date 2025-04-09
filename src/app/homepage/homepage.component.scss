@@ -1,6 +1,9 @@
 /* Hero Section */
+
 .hero {
-    position: relative;
+    position: absolute;
+    bottom: 0;
+    left: 0;
     width: 100%;
     height: 100vh;  /* L'image prend toute la hauteur de l'écran */
     background-image: url('https://cdn.paris.fr/paris/2019/07/24/huge-41b950ab4de6f1fa5310b2e4ea4a47f2.jpeg');  /* Remplacer par ton image */
@@ -11,7 +14,6 @@
     align-items: center;
     color: white;  /* Le texte en blanc pour contraster avec l'image */
     text-align: center;
-    font-family: 'Arial', sans-serif;
   }
   
   /* Contenu dans le Hero */
@@ -21,7 +23,7 @@
   
   .hero h1 {
     font-size: 4rem;
-    font-family: 'Electro', sans-serif;  /* Change ici par une police de style électro si tu en as une */
+    // font-family: $font-family-electro;  //typo
     text-transform: uppercase;
     letter-spacing: 2px;
     margin-bottom: 20px;
@@ -46,9 +48,6 @@
   }
   
   .extra-info {
-    position: absolute;
-    bottom: 0;
-    left: 0;
     width: 100%;
     background: rgba(0, 0, 0, 0.7);  /* Un fond semi-transparent sous le texte */
     padding: 30px;

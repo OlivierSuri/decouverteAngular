@@ -1,0 +1,23 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  nav.navbar {
+    height: 50px; // tu peux ajuster
+    background-color: #f77f00; // un orange chaud sympa
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  /* Le reste de la page */
+  .content {
+    flex: 1;
+  }
+  .content {
+    margin-top: 116px;  
+    background-color: #f77f00;
+  }

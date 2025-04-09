@@ -1,10 +1,10 @@
 /* Style de la navbar */
 .navbar {
     background-color: rgba(0, 0, 0, 0.7);  /* Couleur de fond de la navbar, tu peux changer selon tes goûts */
-    padding: 20px 40px;  /* Espace autour du contenu de la navbar (haut et bas + gauche et droite) */
+    padding: 0px;  /* Espace autour du contenu de la navbar (haut et bas + gauche et droite) */
     display: flex;
-    justify-content: center;
     align-items: center;  /* Centrer les éléments verticalement */
+    justify-content: space-evenly;
     position: fixed;  /* Pour que la navbar reste en haut même quand on scrolle */
     top: 0;
     left: 0;
@@ -13,8 +13,10 @@
   }
   
   /* Style des liens de la navbar */
-  .nav-links {
+  ul.nav-links {
     display: flex;
+    padding: 0px;
+    margin: 36px;
     list-style: none;
     gap: 50px;  /* Espacement entre les éléments de la navbar */
   }

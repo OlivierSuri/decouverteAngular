@@ -1,0 +1,66 @@
+/* Style du conteneur du formulaire */
+.formContainer {
+    display: flex;
+    justify-content: center; /* Centre horizontalement */
+    align-items: flex-start; /* Aligne le formulaire en haut de la page (pas de centrage vertical) */
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;    
+    gap: 20px;
+    width: 100%;
+    max-width: 600px;
+    margin: 5px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #1c1c1c;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Style des labels */
+  label {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-bottom: 5px;
+  }
+  
+  /* Style des champs de texte */
+  input[type="text"],
+  textarea {
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 4px;
+    border: 1px solid #333;
+    background-color: #2a2a2a;
+    color: white;
+    outline: none;
+  }
+  
+  input[type="text"]:focus,
+  textarea:focus {
+    border-color: #ff4500;
+  }
+  
+  /* Style du bouton */
+  button[type="submit"] {
+    padding: 12px 20px;
+    background-color: #ff4500;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #e04000;
+  }
+  
+  button[type="submit"]:disabled {
+    background-color: #888;
+    cursor: not-allowed;
+  }
+  

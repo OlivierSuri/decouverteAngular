@@ -1,4 +1,11 @@
-<h2>Liste des artistes</h2>
+<app-artist-form (addArtist)="ajouterArtiste($event)"></app-artist-form>
 <div class="artist-list">
-  <app-artist *ngFor="let artiste of artistes" [artist]="artiste"></app-artist>
+  <h2>Liste des artistes</h2>
+  <div class="list-container">
+    <app-artist 
+      *ngFor="let artiste of artistes let i = index" 
+      [artist]="artiste" 
+      (delete)="deleteArtiste(i)">
+    </app-artist>
+  </div>
 </div>

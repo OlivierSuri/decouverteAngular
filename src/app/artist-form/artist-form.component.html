@@ -1,0 +1,20 @@
+<div classe="formContainer">
+  <form [formGroup]="artistForm" (ngSubmit)="onSubmit()">
+    <label>
+      Nom:
+      <input formControlName="nom" type="text" />
+    </label>
+
+    <label>
+      URL de la photo:
+      <input formControlName="photo" type="text" />
+    </label>
+
+    <label>
+      Description:
+      <textarea formControlName="description"></textarea>
+    </label>
+
+    <button type="submit" [disabled]="artistForm.invalid">Ajouter</button>
+  </form>
+</div>

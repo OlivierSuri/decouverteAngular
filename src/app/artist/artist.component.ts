@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 
@@ -9,5 +9,10 @@ import { CommonModule } from '@angular/common';
   styleUrl: './artist.component.scss'
 })
 export class ArtistComponent {
-  @Input() artist!: { nom: string; photo: string };
+  @Input() artist!: { nom: string; photo: string; description: string };
+  @Output() delete: EventEmitter<void> = new EventEmitter();
+
+  onDelete(){
+    this.delete.emit(); // Emet l'evenement pour informer artiste-list
+  }
 }
