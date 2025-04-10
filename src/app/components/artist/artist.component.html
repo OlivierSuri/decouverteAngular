@@ -1,6 +1,5 @@
 <div class="artist-card">  
-    <img [src]="artist.photo" [alt]="artist.nom" width="150" />
-    <h3>{{ artist.nom }}</h3>
-    <p>{{ artist.description }}</p>
+    <img [src]="artist.photo" [alt]="artist.name" width="150" />
+    <h3>{{ artist.name }}</h3>
     <button (click)="onDelete()">Supprimer</button>
   </div>

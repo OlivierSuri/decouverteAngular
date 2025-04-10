@@ -16,7 +16,7 @@ export class ArtistFormComponent {
 
   constructor(private formbuilder: FormBuilder){
     this.artistForm = this.formbuilder.group({
-      nom: ['', Validators.required],
+      name: ['', Validators.required],
       photo: ['',Validators.required],
       description: ['']
     });

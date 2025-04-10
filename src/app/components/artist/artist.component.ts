@@ -9,7 +9,7 @@ import { CommonModule } from '@angular/common';
   styleUrl: './artist.component.scss'
 })
 export class ArtistComponent {
-  @Input() artist!: { nom: string; photo: string; description: string };
+  @Input() artist!: { id: string; name: string; photo: string };
   @Output() delete: EventEmitter<void> = new EventEmitter();
 
   onDelete(){
